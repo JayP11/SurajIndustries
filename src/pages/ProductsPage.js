@@ -17,15 +17,10 @@ const ProductsPage = () => {
     fetchProducts,
   } = useProductsContext();
 
-  //fetch single product details
-  // useEffect(() => {
-  //   fetchProducts(`${url}${userid}`);
-  // }, [userid]);
   return (
     <main>
       <PageHero title="products" />
       <Wrapper className="page">
-       
         <div className="section-center products">
           <div className="filter-div">
             <div className={show ? "open" : "close"}>

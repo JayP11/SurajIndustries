@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "../assets/DSH-Logo.svg";
 import { Link } from "react-router-dom";
 import { useProductsContext } from "../context/products_context";
 import { FaTimes, FaArrowRight } from "react-icons/fa";
@@ -28,10 +27,10 @@ const Sidebar = () => {
   return (
     <SidebarContainerr>
       <aside
-        className={`${isSidebarOpen ? "sidebarr show-sidebarr" : "sidebarr"}`}
-      >
+        className={`${isSidebarOpen ? "sidebarr show-sidebarr" : "sidebarr"}`}>
         <div className="sidebar-headerr">
-          <img src={IImages.weblogo} className="logoss" alt="logoss" />
+          <h1 style={{ margin: "0px" }}>Suraj</h1>
+          {/* <img src={IImages.weblogo} className="logoss" alt="logoss" /> */}
           <button type="button" className="close-btnn" onClick={closeSideBar}>
             <FaTimes />
           </button>

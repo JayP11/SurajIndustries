@@ -13,6 +13,21 @@ const Product = ({ image, id, name, price, slug, wholesale_price }) => {
 
   return (
     <Wrapper>
+      {/* <div className="container">
+        <Link to={`/products/${slug}/abc/${userid}`}>
+          <img
+            src={
+              image === "" || image === undefined || image === null
+                ? demoimage
+                : image
+            }
+            alt={name}
+          />
+        </Link>
+        <Link to={`/products/${slug}/abc/${userid}`} className="link">
+          <FaSearch />
+        </Link>
+      </div> */}
       <div className="container">
         <Link to={`/products/${slug}/abc/${userid}`}>
           <img

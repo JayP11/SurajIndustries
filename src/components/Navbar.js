@@ -1,29 +1,21 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-// import logo from "../assets/logo.svg";
-import IImages from "../constants/IImages";
-import { FaBars } from "react-icons/fa";
+ import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { links } from "../utils/constants";
 import CartButtons from "./CartButtons";
 import { useProductsContext } from "../context/products_context";
-import { useUserContext } from "../context/user_context";
-
+  
 const Nav = () => {
   const { openSideBar } = useProductsContext();
-  const { myUser } = useUserContext();
-  const { isLogin, logindata } = useUserContext();
-
-  useEffect(() => {
-    // console.log("first, ", openSideBar);
-  });
+   
   return (
     <NavContainer>
       <div className="nav-center">
         <div className="nav-header">
           <Link to="/">
             {/* <img src={IImages.surajInd} alt="" /> */}
-            <h1 style={{ margin: "0px" }}>LOGO</h1>
+            <h1 style={{ margin: "0px" }}>Suraj</h1>
           </Link>
           <button type="button" className="nav-toggle" onClick={openSideBar}>
             <FaBars />

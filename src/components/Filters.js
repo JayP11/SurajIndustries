@@ -8,7 +8,6 @@ const Filters = () => {
   const {
     filters: { text, category },
     updateFilters,
-    clearFilters,
     all_products,
   } = useFilterContext();
 
@@ -16,7 +15,20 @@ const Filters = () => {
   const occasions = getUniqueValues(all_products, "occasion");
   const colors = getUniqueValues(all_products, "colors");
   // console.log(colors);
-
+  // const categories = [
+  //   {
+  //     name: "Coffee mug",
+  //   },
+  //   {
+  //     name: "Lemon squeezer",
+  //   },
+  //   {
+  //     name: "Kitchen Press",
+  //   },
+  //   {
+  //     name: "Apple Cutter",
+  //   },
+  // ];
   return (
     <Wrapper>
       <div className="content">
@@ -36,7 +48,18 @@ const Filters = () => {
           {/* categories */}
           <div className="form-control">
             <h5>Category</h5>
-            <div>
+            <div style={{ textTransform: "uppercase" }}>
+              {/* <div>Coffee mug</div>
+              <div>Lemon squeezer</div>
+              <div>Kitchen Press</div>
+              <div>Apple Cutter</div> */}
+              {/* {categories.map((item) => {
+                return (
+                  <button onClick={updateFilters} type="button" name="category">
+                    {item.name}
+                  </button>
+                );
+              })} */}
               {categories.map((c, index) => {
                 return (
                   <button
@@ -45,8 +68,7 @@ const Filters = () => {
                     type="button"
                     name="category"
                     value={c}
-                    className={`${category === c ? "active" : null}`}
-                  >
+                    className={`${category === c ? "active" : null}`}>
                     {c}
                   </button>
                 );

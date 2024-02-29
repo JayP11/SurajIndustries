@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Product from "./Product";
-import { useUserContext } from "../context/user_context";
 
 const GridView = ({ products }) => {
-  const { userid, isLogin } = useUserContext()
   return (
     <Wrapper>
       <div className="products-container">

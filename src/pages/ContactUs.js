@@ -115,8 +115,6 @@ const ContactUs = () => {
                   </p>
                 </li>
                 <li>
-                  {/* <span>Phone:</span>+91 98792 06540 / 9099977117 */}
-                  {/* <span>Phone:</span>+91 1234 884 885 */}
                   <p style={{ color: "black", fontWeight: "700" }}>
                     Phone: &nbsp;
                     <a
@@ -163,7 +161,6 @@ const ContactUs = () => {
                   <input
                     type="text"
                     placeholder=""
-                    // type="text"
                     name="field-name"
                     value={number}
                     maxLength={10}
@@ -172,7 +169,6 @@ const ContactUs = () => {
                         setnumber(e.target.value);
                       }
                     }}
-                    // placeholder=""
                   />
                 </div>
                 <div className="input-row">
@@ -184,15 +180,7 @@ const ContactUs = () => {
                     onChange={(e) => setemail(e.target.value)}
                   />
                 </div>
-                {/* <div className="input-row">
-                  <label>Your City *</label>
-                  <input
-                    type="text"
-                    placeholder=""
-                    value={Text}
-                    onChange={(e) => setemail(e.target.value)}
-                  />
-                </div> */}
+
                 <div className="input-row">
                   <label>Your Comment *</label>
                   <textarea

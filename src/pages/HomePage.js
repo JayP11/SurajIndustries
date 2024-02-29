@@ -25,7 +25,6 @@ const HomePage = () => {
       <TrandingProducts />
       <FeaturedProducts />
       <HeroCategories />
-      {/* <OccassionGrid /> */}
       {/* <BridalProducts /> */}
       {/* <Testimonials /> */}
       {/* <Services />

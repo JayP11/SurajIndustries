@@ -23,13 +23,6 @@ const TrandingProducts = () => {
     produts_error: error,
     trending_products: tranding,
   } = useProductsContext();
-  // console.log(
-  //   "🚀 ~ file: TrandingProducts.js:26 ~ TrandingProducts ~ tranding:",
-  //   tranding
-  // );
-  // if (loading) {
-  //   return <Loading />;
-  // }
   if (error) {
     return <Error />;
   }
@@ -37,7 +30,7 @@ const TrandingProducts = () => {
   var settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
@@ -87,7 +80,7 @@ const TrandingProducts = () => {
         <h2>Trending Products</h2>
         <div className="underline"></div>
       </div>
-      <div className="section-center featured">
+      <div className="section-center featured"  style={{height:"250px"}}>
         <Slider {...settings}>
           {tranding.slice(0, 6).map((product) => {
             return <Product className="test" key={product.id} {...product} />;

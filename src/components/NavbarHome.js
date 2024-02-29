@@ -37,7 +37,7 @@ const NavbarHome = () => {
         <div className="nav-header" style={{ margin: "0px" }}>
           <Link to="/">
             {/* <img src={IImages.surajInd} alt="" /> */}
-            <h1 style={{ margin: "0px" }}>LOGO</h1>
+            <h1 style={{ margin: "0px" }}>Suraj</h1>
           </Link>
           <button
             type="button"

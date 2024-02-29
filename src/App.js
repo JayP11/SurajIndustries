@@ -24,15 +24,13 @@ import CancellationRefund from "./pages/CancellationRefund";
 function App() {
   return (
     <AuthWrapper>
-      <Router basename={"/mm"}>
+      <Router basename={"/SurajIndustries"}>
         <Sidebar />
         <Switch>
           <Route exact path="/">
             <NavbarHome />
             <Home />
           </Route>
-          {/* <Route>
-          <Navbar /> */}
           <Route exact path="/about">
             <Navbar />
             <About />
@@ -57,7 +55,7 @@ function App() {
             <Navbar />
             <Products />
           </Route>
-          <PrivateRoute exact path="/MyProfile">
+          {/* <PrivateRoute exact path="/MyProfile">
             <Navbar />
             <MyProfile />
           </PrivateRoute>
@@ -76,14 +74,16 @@ function App() {
           <Route exact path="/ShippingDeliveryPolicy">
             <Navbar />
             <ShippingDeliveryPolicy />
-          </Route>
-          {/* <Route exact path="/MyProfile">
+          </Route> 
+         <Route exact path="/MyProfile">
             <Navbar />
             <MyProfile />
           </Route> */}
-          <Route exact path="/products/:id/abc/:idd" children={<SingleProduct />}>
-            {/* <Navbar /> */}
-          </Route>
+          <Route
+            exact
+            path="/products/:id/abc/:idd"
+            children={<SingleProduct />}
+          ></Route>
           <Route exact path="*">
             <Navbar />
             <Error />

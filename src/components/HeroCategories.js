@@ -5,7 +5,6 @@ import styled from "styled-components";
 import Error from "./Error";
 import Loading from "./Loading";
 import Product from "./Product";
-import productimg from "../assets/sell-img1.png";
 
 const HeroCategories = () => {
   const { categories } = useHomeContext();
@@ -19,7 +18,8 @@ const HeroCategories = () => {
                 <div className="col-md-6">
                   <div className="sell-text">
                     <h3>500+</h3>
-                    <p>{c.name}</p>
+                    <p>Coffee Mug</p>
+                    {/* <p>{c.name}</p> */}
                     {c.name == "Ready to Ship" ? (
                       <a className="btn" href="/products">
                         Shop Now
@@ -33,7 +33,11 @@ const HeroCategories = () => {
                 </div>
                 <div className="col-md-6">
                   <div className="sell-img">
-                    <img src={c.image_full_path} alt="" />
+                    <img
+                      src="https://5.imimg.com/data5/ANDROID/Default/2022/5/VO/SM/HX/3717636/prod-20220506-1025138144226855824837139-jpg-500x500.jpg"
+                      alt=""
+                    />
+                    {/* <img src={c.image_full_path} alt="" /> */}
                   </div>
                 </div>
               </div>
@@ -54,10 +58,10 @@ const Section = styled.section`
   }
   .sell-box {
     ${"" /* height:450px; */}// background: #f1d7c0;
-    // padding: 10px 0 0 0;;
+    // padding: 10px 0 0 0;;;;;;;
   }
   .sell-box .sell-img {
-    height: 548px;
+    ${"" /* height: 548px; */}
     overflow: hidden;
     text-align: center;
   }
@@ -71,10 +75,9 @@ const Section = styled.section`
   .sell-box .sell-text {
     text-align: left;
     padding-left: 50px;
-    ${"" /* padding: 0 0 0 110px; */}
   }
   .sell-box .sell-text h3 {
-    color: var(--clr-white);
+    ${"" /* color: var(--clr-white); */}
     letter-spacing: 0.3em;
     font-size: 78px;
     font-weight: 400;
@@ -82,7 +85,7 @@ const Section = styled.section`
   .sell-box .sell-text p {
     letter-spacing: 0.3em;
     font-size: 36px;
-    color: var(--clr-white);
+    ${"" /* color: var(--clr-white); */}
     margin: 0 0 10px 0;
   }
   .sell-box .sell-text a.btn {
@@ -148,10 +151,10 @@ const Section = styled.section`
       flex: 0 0 100%;
       max-width: 100%;
     }
-    
-      .sell-box .row.align-items-center {
-        padding:0px;
-      }
+
+    .sell-box .row.align-items-center {
+      padding: 0px;
+    }
     .sell-img {
       padding: 30px 0 0 0;
     }

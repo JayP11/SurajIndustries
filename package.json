@@ -28,6 +28,7 @@
     "react-slick": "^0.28.1",
     "react-social-login": "^3.4.13",
     "react-tabs": "^3.2.2",
+    "slick-carousel": "^1.8.1",
     "stripe": "^8.130.0",
     "styled-components": "^5.2.1",
     "validator": "^13.6.0",
